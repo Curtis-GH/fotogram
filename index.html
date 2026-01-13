@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram Projekt</title>
+    <link rel="stylesheet" href="fotogram.css" />
+    <link rel="icon" href="favicon.ico">
+
+  <script src="fotogram.js" defer></script>
+
+  </head>
+
+  <body class="hero_section">
+    <header class="hero-top">
+      <div>
+      <img class="logo" src="pictures/logo.png" alt="logo">
+      </div>
+    </header>
+<br>
+<main>
+ <section class="hero-main">
+    <h1 class="titel">Dinge die ich schonmal gesehen habe</h1>
+    <h2 class="visually-hidden">Fotogalerie</h2>
+    
+    <div class="img_position" id="galleryTop"></div>
+    <div class="img_position_2" id="galleryBottom"></div>
+  </section>
+</main>
+    <footer>
+
+      <div class="footer">
+      <img class="footer-logo" src="pictures/logo-footer.png" alt="logo-footer">
+      </div>
+    </footer>
+    
+   <dialog id="imgDialog" class="img-dialog">
+  <button id="prevBtn" class="nav-btn left" aria-label="Vorheriges Bild">‹</button>
+
+  <img id="dialogImg" class="dialog-img" alt="">
+
+  <button id="nextBtn" class="nav-btn right" aria-label="Nächstes Bild">›</button>
+
+  <button id="closeDialog" class="dialog-close" aria-label="Schließen">schließen</button>
+</dialog>
+
+
+  </body>
+</html>
