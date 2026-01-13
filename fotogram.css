@@ -11,6 +11,17 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+body.hero_section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* ===== PAGE / LAYOUT ===== */
@@ -99,19 +110,16 @@ body {
 .footer {
     display: flex;
     justify-content: center;
-
     width: 100%;
-    height: 200px;
-
+    height: 150px;
     background-color: var(--bg-bar);
 }
 
 .footer-logo {
     display: flex;
     justify-content: center;
-
-    height: 150px;
-    margin-top: 22px;
+    height: 100px;
+    margin-top: 50px;
 }
 
 /* ===== DIALOG ===== */
@@ -129,6 +137,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .img-dialog::backdrop {
@@ -137,26 +146,30 @@ body {
 
 .dialog-img {
     display: block;
-
-    width: auto;
-    height: auto;
-    max-width: 90vw;
-    max-height: 80vh;
-
+    width: 600px;
+    height:400px;
+    
     object-fit: contain;
 }
 
 .nav-btn {
     position: absolute;
     top: 50%;
+    
 }
 
 .nav-btn.left {
-    left: 16px;
+    left: 50px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 }
 
 .nav-btn.right {
-    right: 16px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 }
 
 .dialog-close {
@@ -164,9 +177,7 @@ body {
     top: 16px;
     right: 16px;
     z-index: 10;
-
     padding: 8px 12px;
-
     border: none;
     cursor: pointer;
 }
@@ -241,5 +252,19 @@ body {
 
         font-size: 30px;
         text-align: center;
+        
     }
-}
+}   .footer-logo {
+    display: flex;
+    justify-content: center;
+
+    height: 100px;
+    margin-top: 30px;}
+
+.logo {
+    display: flex;
+    justify-content: start;
+
+    width: 250px;
+    height: 60px;
+    padding-bottom: 25px;}
